@@ -45,7 +45,7 @@ var restorants=[
 	}, 
 	{
 		'tipo' : 'arabe',
-		'nombre': 'Comida arabe Yamile',
+		'nombre': 'Comida Árabe Yamile',
 		'direccion': 'Av. Perú 647, Recoleta, Región Metropolitana', 
 		'telefono': 232719489,
 		'horario': '12:30 - 22:00',

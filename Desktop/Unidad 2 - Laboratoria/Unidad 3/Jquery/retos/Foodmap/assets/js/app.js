@@ -15,7 +15,7 @@ $('select#location1').on('change',function(){
    	var tipo=restorants[i].tipo; 
    	
    	if (valor == tipo){
-   		$(".cont-imgs").append("<div id = 'newimg-" + [i]+ "' data-index='" + [i]+ "' class='col-xs-5 col-xs-offset-1 img-lista img-lista-"+[i]+ "'><p class='informacionMouse informacionMouse-" +[i]+"'>Click para informacion</p> </div>");
+   		$(".cont-imgs").append("<div id = 'newimg-" + [i]+ "'  data-toggle='modal' data-target='#infoComida' data-index='" + [i]+ "' class='col-xs-5 col-xs-offset-1 img-lista img-lista-"+[i]+ "'><p class='informacionMouse informacionMouse-" +[i]+"'>Click para informacion</p> </div>");
    		$(".img-lista-" + [i]).css({'background': "url(" + restorants[i].foto + ")"});
    		$(".img-lista-" + [i]).css({'background-size':'cover'});
    		$(".img-lista-" + [i]).css({'background-position':'center'});
@@ -43,8 +43,19 @@ $('select#location1').on('change',function(){
   };
 
 	//modal al hacer click 
-  $(".img-lista").on("click" ,function(){
-    console.log("click");
-  })
+  for ( var k=0; k<restorants.length; k++){
+    var restorantIndex= k;
+    $(document).on("click", ".img-lista-"+ [k] , function(){
+      var index= $(this).attr("data-index")
+      console.log(index);
+      $("h4.modal-title").html(restorants[index].nombre);
+      $("p.direccion").html("Dirección : " + restorants[index].direccion);
+      $("p.telefono").html("Teléfono : " + restorants[index].telefono);
+      $("p.horario").html("Horario : " + restorants[index].horario);
+      $("p.evaluacion").html("Evaluacion : " + restorants[index].evaluacion + " / 5 ");
+
+    })
+  };
+
  
 }); 
