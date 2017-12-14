@@ -1,0 +1,148 @@
+/*
+* font-family: 'Barlow', sans-serif;
+* font-family: 'Montserrat', sans-serif;
+*/
+
+*{
+	margin: 0px; 
+	padding: 0px;
+	box-sizing: border-box; 
+}
+body{
+	background: #2B2B2B;
+}
+.initial{ 
+	width: 100%; 
+	height: 100vh;
+	display: flex;
+	align-items: center; 
+	justify-content: center;
+}
+
+.initial h1{
+	color:#C46719;
+	font-size: 4em;
+	font-family: 'Barlow', sans-serif;
+}
+
+/*Loader*/
+.loader {
+    border: .5em solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #C46719 ; /* Blue */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 2s linear infinite;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/*Second view*/
+
+.titleFood{
+	color:#C46719;
+	font-size: 4em;
+	font-family: 'Barlow', sans-serif;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.line {
+	display: flex; 
+	justify-content: space-around;
+	font-size: 2em;
+	color: #FFF;
+}
+.line span hr{
+	width: 30%;
+	height: 1em;
+	color: white;
+}
+
+.map{
+	display: flex; 
+	justify-content: center;
+}
+
+.comidaCerca{
+	color:#C46719;
+	font-family: 'Barlow', sans-serif;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-control{
+	margin-right: .5em;
+}
+
+.imgs{
+	height: 5.5em;
+	outline: 2px solid white;
+}
+
+.img-1{
+	background-image: url(../img/img-1.jpg);
+	background-size: cover; 
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.img-2{
+	background-image: url(../img/img-2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.img-3{
+	background-image: url(../img/img-3.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.img-4{
+	background-image: url(../img/img-4.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.img-5{
+	background-image: url(../img/img-5.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.informacionMouse{
+	margin-top: 1em;
+	font-size: 1.5em;
+	font-family: 'Barlow', sans-serif;
+	color: #FFF;
+	font-weight: bold;
+	display: none;
+}
+
+.informacionMouse-1{
+	display:none;
+}
+.informacionMouse-2{
+	display:none;
+}
+.informacionMouse-3{
+	display:none;
+}
+.informacionMouse-4{
+	display:none;
+}
+.informacionMouse-5{
+	display:none;
+}
+
